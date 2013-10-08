@@ -12,5 +12,9 @@ Ext.application({
 
     extend: 'Demo.Application',
     
-    autoCreateViewport: true
+    autoCreateViewport: true ,
+    init: function(app) {
+        console.log('app init1');
+        this.callParent();
+    }
 });

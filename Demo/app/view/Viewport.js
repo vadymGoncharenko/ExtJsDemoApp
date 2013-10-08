@@ -2,7 +2,9 @@ Ext.define('Demo.view.Viewport', {
     extend: 'Ext.container.Viewport',
     requires:[
         'Ext.layout.container.Fit',
-        'Demo.view.Main'
+        // 'Demo.view.Main'
+        'Demo.view.Employees',
+        'Demo.view.Organizations'
     ],
 
     layout: {
@@ -10,6 +12,11 @@ Ext.define('Demo.view.Viewport', {
     },
 
     items: [{
-        xtype: 'app-main'
+        // xtype: 'app-main'
+        layout: 'hbox',
+        items: [
+            {xtype : 'organizations'},
+            {xtype : 'employees'}
+        ]
     }]
 });

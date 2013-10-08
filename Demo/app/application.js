@@ -8,10 +8,15 @@ Ext.define('Demo.Application', {
     ],
 
     controllers: [
-        // TODO: add controllers here
+        'EmpController', 'OrgController'
     ],
 
     stores: [
-        // TODO: add stores here
-    ]
+        'OrgUnits', 'Employees'
+    ],
+
+
+    init: function(app) {
+        console.log('app init');
+    }
 });
