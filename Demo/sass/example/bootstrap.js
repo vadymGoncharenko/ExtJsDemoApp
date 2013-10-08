@@ -65,6 +65,7 @@ Ext.ClassManager.addNameAlternateMappings({
   "Demo.Application": [],
   "Ext.ux.ToolbarDroppable": [],
   "Ext.ux.event.Maker": [],
+  "Demo.store.Tree": [],
   "Ext.ux.TabScrollerMenu": [],
   "Ext.ux.IFrame": [],
   "Ext.ux.DataView.Draggable": [],
@@ -140,7 +141,9 @@ Ext.ClassManager.addNameAliasMappings({
   ],
   "Ext.ux.DataView.Animated": [],
   "Demo.store.Employees": [],
-  "Demo.view.EmployeeManagement": [],
+  "Demo.view.EmployeeManagement": [
+    "widget.emanagement"
+  ],
   "Ext.ux.ajax.SimXhr": [],
   "Ext.ux.event.RecorderManager": [
     "widget.eventrecordermanager"
@@ -173,6 +176,7 @@ Ext.ClassManager.addNameAliasMappings({
   "Demo.Application": [],
   "Ext.ux.ToolbarDroppable": [],
   "Ext.ux.event.Maker": [],
+  "Demo.store.Tree": [],
   "Ext.ux.TabScrollerMenu": [
     "plugin.tabscrollermenu"
   ],

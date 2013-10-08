@@ -12,7 +12,7 @@ Ext.define('Demo.Application', {
     ],
 
     stores: [
-        'OrgUnits', 'Employees'
+        'OrgUnits', 'Employees','Tree'
     ],
 
 

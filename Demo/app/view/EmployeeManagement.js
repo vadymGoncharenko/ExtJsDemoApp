@@ -1,4 +1,13 @@
 Ext.define("Demo.view.EmployeeManagement", {
-    extend: 'Ext.Component',
-    html: 'Hello, World!!'
+    extend: 'Ext.Container',
+    alias: "widget.emanagement",
+    html: 'Hello, EmployeeManagement!!' ,
+    items : [
+        {
+            xtype : 'combobox'
+        }
+        ,{
+            xtype : 'button'
+        }
+    ]
 });

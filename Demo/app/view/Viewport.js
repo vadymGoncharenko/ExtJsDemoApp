@@ -4,7 +4,8 @@ Ext.define('Demo.view.Viewport', {
         'Ext.layout.container.Fit',
         // 'Demo.view.Main'
         'Demo.view.Employees',
-        'Demo.view.Organizations'
+        'Demo.view.Organizations',
+        'Demo.view.EmployeeManagement'
     ],
 
     layout: {
@@ -13,10 +14,18 @@ Ext.define('Demo.view.Viewport', {
 
     items: [{
         // xtype: 'app-main'
-        layout: 'hbox',
+        xtype :'container',
+        layout: 'border',
         items: [
-            {xtype : 'organizations'},
-            {xtype : 'employees'}
+            {xtype : 'emanagement',
+             region : 'north'
+            },
+            {xtype : 'organizations',
+             region : 'west'
+            },
+            {xtype : 'employees',
+             region : 'center'
+            }
         ]
     }]
 });
