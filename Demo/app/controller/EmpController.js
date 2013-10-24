@@ -8,7 +8,7 @@ Ext.define('Demo.controller.EmpController', {
 	 
 	init: function(){
 	this.control({
-	'orgsview -> 'organizations treepanel'' :{
+	'organizations > treepanel' :{
 	selectionchange: this.onTreeSelectionChange
 	}
 	});
