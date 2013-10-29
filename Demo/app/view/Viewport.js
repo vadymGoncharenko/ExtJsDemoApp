@@ -5,7 +5,8 @@ Ext.define('Demo.view.Viewport', {
         // 'Demo.view.Main'
         'Demo.view.Employees',
         'Demo.view.Organizations',
-        'Demo.view.EmployeeManagement'
+        'Demo.view.EmployeeManagement',
+        'Demo.view.AddNewUser'
     ],
 
     layout: {
@@ -26,6 +27,7 @@ Ext.define('Demo.view.Viewport', {
             {xtype : 'employees',
              region : 'center'
             }
+			
         ]
     }]
 });

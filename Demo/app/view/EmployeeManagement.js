@@ -5,9 +5,12 @@ Ext.define("Demo.view.EmployeeManagement", {
     items : [
         {
             xtype : 'combobox'
+			
         }
         ,{
-            xtype : 'button'
+            xtype : 'button',
+			text: 'Open Window',
+			action : 'openwindow'
         }
     ]
 });

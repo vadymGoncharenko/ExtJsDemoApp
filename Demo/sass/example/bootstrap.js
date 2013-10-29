@@ -43,6 +43,7 @@ Ext.ClassManager.addNameAlternateMappings({
   "Ext.ux.DataView.Animated": [],
   "Demo.store.Employees": [],
   "Demo.view.EmployeeManagement": [],
+  "Demo.view.AddNewUser": [],
   "Ext.ux.ajax.SimXhr": [],
   "Ext.ux.event.RecorderManager": [],
   "Ext.ux.ProgressBarPager": [],
@@ -143,6 +144,9 @@ Ext.ClassManager.addNameAliasMappings({
   "Demo.store.Employees": [],
   "Demo.view.EmployeeManagement": [
     "widget.emanagement"
+  ],
+  "Demo.view.AddNewUser": [
+    "widget.addnewuser"
   ],
   "Ext.ux.ajax.SimXhr": [],
   "Ext.ux.event.RecorderManager": [
