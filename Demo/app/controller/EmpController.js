@@ -17,6 +17,9 @@ Ext.define('Demo.controller.EmpController', {
             },
                 'emanagement button[action=openwindow]': {
                 click: this.openWindow
+            },
+                'addnewuser button[action=save]': {
+                click: this.saveNewUser
             }
         });
         this.callParent();
@@ -37,5 +40,24 @@ Ext.define('Demo.controller.EmpController', {
 		//	form = view.down('form'),
 		Ext.create('Demo.view.AddNewUser');
 		console.log('End of  click open window');
+    }
+	,
+    saveNewUser: function (button) {
+        console.log('button click save New User');
+		var win = button.up('addnewuser');
+		form = win.down('form');
+		
+		this.getEmpGrid().store.add({
+			'name': form.getForm().findField('name').getValue(),
+			'birthdate': form.getForm().findField('birthdate').getValue(),
+			'phone': form.getForm().findField('phone').getValue(),
+			'orgId': 'rnd-001'
+		});
+		
+		//record = form.getRecord(),
+        //    values = form.getValues();
+        //record.set(values);
+        win.close();
+		console.log('End of  click save New User');
     }
 });

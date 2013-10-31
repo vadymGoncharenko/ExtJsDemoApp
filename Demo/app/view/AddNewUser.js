@@ -1,10 +1,11 @@
 Ext.define('Demo.view.AddNewUser', {
-    extended: 'ext.window.Window ',
+    extend: 'Ext.window.Window',
     alias: 'widget.addnewuser',
     title: 'Add new user',
     height: 200,
     width: 400,
     autoShow: true,
+	layout :'fit',
     requires: ['Ext.form.Panel'],
 
     initComponent: function () {
@@ -28,10 +29,14 @@ Ext.define('Demo.view.AddNewUser', {
                 name: 'phone',
                 fieldLabel: 'Phone'
             }, {
-                xtype: 'textfield',
-                name: 'phone',
-                fieldLabel: 'Phone'
-            }]
+                xtype: 'combobox',
+                name: 'orgId',
+				valueField:'id',
+				displayField:'name',
+                fieldLabel: 'Orgs'
+            }
+			
+			]
         }];
 
         this.buttons = [{

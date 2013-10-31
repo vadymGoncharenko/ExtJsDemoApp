@@ -7,6 +7,7 @@
 Ext.Loader.addClassPathMappings({
   "Ext": "../../../ext/src",
   "Demo": "../../app",
+  "Demo.store.orgArray": "../../app/store/OrgArray.js",
   "Ext.rtl.EventObjectImpl": "../../../ext/src/rtl/EventObject.js",
   "Demo.Application": "../../app/application.js"
 });
@@ -20,6 +21,7 @@ Ext.ClassManager.addNameAlternateMappings({
   "Ext.ux.FieldReplicator": [],
   "Demo.view.Employees": [],
   "Ext.ux.grid.filter.ListFilter": [],
+  "Demo.store.orgArray": [],
   "Ext.ux.ajax.XmlSimlet": [],
   "Ext.ux.event.Driver": [],
   "Demo.controller.Main": [],
@@ -105,6 +107,7 @@ Ext.ClassManager.addNameAliasMappings({
   "Ext.ux.grid.filter.ListFilter": [
     "gridfilter.list"
   ],
+  "Demo.store.orgArray": [],
   "Ext.ux.ajax.XmlSimlet": [
     "simlet.xml"
   ],
