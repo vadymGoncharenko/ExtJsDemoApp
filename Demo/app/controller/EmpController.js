@@ -20,6 +20,12 @@ Ext.define('Demo.controller.EmpController', {
             },
                 'addnewuser button[action=save]': {
                 click: this.saveNewUser
+            },			
+			'employees grid': {
+                itemclick: this.editUser
+            },
+            'addnewuser button[action=saveEditedUser]': {
+                click: this.saveEditedUser
             }
         });
         this.callParent();
@@ -59,5 +65,32 @@ Ext.define('Demo.controller.EmpController', {
         //record.set(values);
         win.close();
 		console.log('End of  click save New User');
+    },
+	editUser: function (grid,record) {
+        console.log('Start edit User');
+		var view = Ext.widget('addnewuser');
+		view.down('form').loadRecord(record);
+		
+		//Ext.create('Demo.view.AddNewUser');				       
+		console.log('End   edit User');
+    }
+	,
+    saveEditedUser: function (button) {
+        console.log('button click save Edit User');
+		var win = button.up('addnewuser');
+		form = win.down('form');
+		
+		this.getEmpGrid().store.add({
+			'name': form.getForm().findField('name').getValue(),
+			'birthdate': form.getForm().findField('birthdate').getValue(),
+			'phone': form.getForm().findField('phone').getValue(),
+			'orgId': 'rnd-001'
+		});
+		
+		//record = form.getRecord(),
+        //    values = form.getValues();
+        //record.set(values);
+        win.close();
+		console.log('End of  click save Edit User');
     }
 });

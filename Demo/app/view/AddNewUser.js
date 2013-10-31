@@ -42,7 +42,13 @@ Ext.define('Demo.view.AddNewUser', {
         this.buttons = [{
             text: 'Save',
             action: 'save'
-        }, {
+        },
+		{
+            text: 'Save Edited User',
+            action: 'saveEditedUser'
+			
+        },
+		{
             text: 'Cancel',
             scope: this,
             handler: this.close
